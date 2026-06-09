@@ -6,7 +6,7 @@ set -euo pipefail
 # ----- Variables (modificar si cambia el entorno) -----
 DATASET="tank/nfs"                         # dataset de ZFS que se va a exportar
 EXPORT_DIR="/tank/nfs"                     # punto de montaje del dataset
-NET="192.168.56.0/24"                      # red de clientes autorizada
+NET="192.168.100.0/24"                      # red de clientes autorizada
 OPTS="rw,sync,no_subtree_check,root_squash"
 
 echo ">> 1/4 Instalando el servidor NFS..."
