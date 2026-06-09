@@ -5,11 +5,11 @@ set -euo pipefail
 
 # ----- Variables -----
 ZVOL="tank/iscsi-lun0"
-ZVOL_SIZE="10G"
+ZVOL_SIZE="3G"
 ZVOL_DEV="/dev/zvol/tank/iscsi-lun0"
 TARGET_IQN="iqn.2026-01.local.zfs1:target0"
 INITIATOR_IQN="iqn.2026-01.local.cliente-linux:init0"
-PORTAL_IP="192.168.56.10"
+PORTAL_IP="192.168.100.10"
 
 echo ">> 1/4 Instalando targetcli..."
 apt update
